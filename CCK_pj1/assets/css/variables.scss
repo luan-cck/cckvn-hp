@@ -1,0 +1,15 @@
+@charset "UTF-8";
+
+// 変数定義
+$blue: #005bac;
+$dark_blue: #23254C;
+$deep_black: #000000;
+$gray: #B4B4B4;
+$pure_white: #FFFFFF;
+
+
+@mixin button_link {
+  border: 1px solid #fff;
+  border-radius: 4px;
+  padding: 22px 18px;
+}

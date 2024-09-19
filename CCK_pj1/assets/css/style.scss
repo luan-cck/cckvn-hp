@@ -1,0 +1,206 @@
+@charset "UTF-8";
+
+@import './variables.scss';
+
+/*--------------------
+fv
+--------------------*/
+
+.fv {
+  background-image: url("../img/top_background.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  padding-bottom: 80px;
+}
+
+.fv_title {
+  color: $blue;
+  font-size: 80px;
+  font-weight: Bold;
+  line-height: 80px;
+  margin-bottom: 54px;
+  padding-top: 226px;
+}
+
+.fv_text_container {
+  margin-left: 98px;
+  max-width: 840px;
+  width: 100%;
+}
+
+.fv_heading {
+  font-size: 40px;
+  font-weight: bold;
+  line-height: 48px;
+  margin-bottom: 24px;
+}
+
+.fv_text {
+  color: #23254C;
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+/*--------------------
+goal
+--------------------*/
+.goal {
+  background-color: $blue;
+  color: $pure_white;
+}
+
+.goal_contents {
+  margin: 57px 0 0 98px;
+  max-width: 864px;
+  padding-bottom: 136px;
+  width: 100%;
+}
+
+.goal_text {
+  font-size: 20px;
+  margin-bottom: 57px;
+}
+
+.goal_button {
+  @include button_link;
+  align-items: center;
+  color: $pure_white;
+  justify-content: space-between;
+  max-width: 249px;
+  width: 100%;
+}
+
+/*--------------------
+portfolio
+--------------------*/
+
+.portfolio {
+  color: $blue;
+}
+
+.portfolio_image_layout {
+  gap: 0 24px;
+  justify-content: center;
+  margin-top: 80px;
+}
+
+.portfolio_image_1 {
+  display: block;
+  max-width: 648px;
+  object-fit: contain;
+  width: 100%;
+}
+
+.portfolio_image_2 {
+  display: block;
+  margin-bottom: 17px;
+  max-width: 456px;
+  object-fit: contain;
+  width: 100%;
+}
+
+.portfolio_image_3 {
+  display: block;
+  max-width: 456px;
+  object-fit: contain;
+  width: 100%;
+}
+
+/*--------------------
+mission
+--------------------*/
+.mission_bg {
+  background-image: url("../img/mission_background.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+}
+
+.mission .section_subtitle, .mission .section_title {
+  color: $blue;
+}
+
+.mission_text {
+  color: #23254C;
+  font-size: 20px;
+  margin-left: 98px;
+  margin-top: 80px;
+  max-width: 840px;
+  width: 100%;
+}
+
+.mission_image {
+  display: block;
+  margin: 80px auto;
+  max-width: 862px;
+  width: 100%;
+}
+
+/*--------------------
+team
+--------------------*/
+.team .section_subtitle,
+.team .section_title {
+  color: $blue;
+}
+
+.team_text {
+  color: #23254C;
+  font-size: 20px;
+  margin-bottom: 80px;
+  margin-left: 98px;
+  max-width: 840px;
+  width: 100%;
+}
+
+.team_member_container {
+  align-items: center;
+  gap: 33px;
+  margin-bottom: 129px;
+}
+
+.team_member_link {
+  color: $pure_white;
+  position: relative;
+}
+
+.member_image {
+  border-radius: 100px;
+  display: block;
+  max-width: 168px;
+
+}
+
+.member_text_container {
+  border-radius: 0 0 100px 100px;
+  bottom: 0;
+  flex-direction: column;
+  left: 50%;
+  max-width: 168px;
+  padding: 18px 0 28px 0;
+  position: absolute;
+  transform: translateX(-50%);
+  width: 100%;
+}
+
+.member_text_container:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+  transition: all 0.4s ease-in-out;
+}
+
+.member_name, .member_role {
+  text-align: center;
+}
+
+.member_name {
+  font-size: 18px;
+}
+
+.member_role {
+  font-size: 12px;
+}
+
+.member_list_link {
+color: $gray;
+font-size: 20px;
+text-decoration: underline;
+}
