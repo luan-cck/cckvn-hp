@@ -23,8 +23,44 @@
           Please feel free to contact us.<br>
           For business opportunities or media liaison, please contact us here and our representative will get back to you soon.
         </p>
+          <form action="send_to_URL" method="post" class="contacct_form">
+            <div class="flex contact_layout">
+              <p class="contact_list azo_M">Name</p>
+              <p class="contact_label azo_R">Require</p>
+              <input type="text" name="name" placeholder="Example" class="azo_L contact_input">
+            </div>
+            <div class="flex contact_layout">
+              <p class="contact_list azo_M">Email</p>
+              <p class="contact_label azo_R">Require</p>
+              <input type="email" name="email" placeholder="Example.email@.co.jp" class="azo_L contact_input">
+            </div>
+            <div class="flex contact_layout">
+              <p class="contact_list azo_M">Phone</p>
+              <p class="contact_label azo_R">Require</p>
+              <input type="tel" name="phone" placeholder="+11 0238457578" class="azo_L contact_input">
+            </div>
+            <div class="flex contact_layout">
+              <p class="contact_list azo_M">Company</p>
+              <p class="contact_label azo_R">Require</p>
+              <input type="text" name="company" placeholder="Example" class="azo_L contact_input">
+            </div>
+            <div class="flex contact_layout">
+              <p class="contact_list azo_M">Department</p>
+              <p class="contact_label azo_R">Optional</p>
+              <input type="text" name="department" placeholder="Example" class="azo_L contact_input">
+            </div>
+            <div class="flex contact_layout">
+              <p class="contact_list azo_M">Content of inquiry</p>
+              <p class="contact_label azo_R">Require</p>
+              <textarea id="message_input" name="message" rows="5" cols="30" placeholder="Example" class="azo_L contact_input"></textarea><br>
+            </div>
+            <p id="count_characters" class="count_characters azo_L">Remaining Characters : 600</p>
+            <input type="submit" value="Submit" class="submit_button">
+        </div>
+        </form>
       </div>
     </section>
   </main>
+  <script src="./assets/js/script.js"></script>
 </body>
 </html>

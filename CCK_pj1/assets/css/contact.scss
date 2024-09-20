@@ -3,7 +3,7 @@
 @import './variables.scss';
 
 /*--------------------
-contact
+contact_top
 --------------------*/
 .contact_main {
   background-color: #F8F9FA;
@@ -19,5 +19,66 @@ contact
 }
 
 .contact_top_text {
+  margin-bottom: 60px;
   text-align: center;
+}
+
+/*--------------------
+contact_form
+--------------------*/
+.contacct_form {
+  background-color: $pure_white;
+  max-width: 1128px;
+  padding: 101px 106px 111px 106px;
+  width: 100%;
+}
+
+.contact_layout {
+  justify-content: flex-end;
+  margin-bottom: 24px;
+}
+
+.contact_list {
+  color: #757575;
+  font-size: 20px;
+}
+
+.contact_label {
+  background-color: $blue;
+  border-radius: 8px;
+  color: $pure_white;
+  font-size: 12px;
+  height: 22px;
+  line-height: 18px;
+  margin-left: 8px;
+  padding: 4px 10px;
+}
+
+.contact_input {
+  margin-left: 16px;
+  max-width: 605px;
+  width: 100%;
+}
+
+.count_characters {
+  color: #757575;
+  font-size: 20px;
+  margin-top: 124px;
+  text-align: right;
+}
+
+.count_characters.minus {
+  color: #ff063c;
+}
+
+.submit_button {
+  display: block;
+  background-color: $blue;
+  border: 1px solid $blue;
+  border-radius: 4px;
+  color: $pure_white;
+  padding: 16px 14px;
+  max-width: 188px;
+  margin: 0 auto;
+  width: 100%;
 }

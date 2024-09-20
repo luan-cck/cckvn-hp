@@ -1,5 +1,5 @@
 /*--------------------
-contact
+contact_top
 --------------------*/
 .contact_main {
   background-color: #F8F9FA;
@@ -16,5 +16,66 @@ contact
 }
 
 .contact_top_text {
+  margin-bottom: 60px;
   text-align: center;
+}
+
+/*--------------------
+contact_form
+--------------------*/
+.contacct_form {
+  background-color: #FFFFFF;
+  max-width: 1128px;
+  padding: 101px 106px 111px 106px;
+  width: 100%;
+}
+
+.contact_layout {
+  justify-content: flex-end;
+  margin-bottom: 24px;
+}
+
+.contact_list {
+  color: #757575;
+  font-size: 20px;
+}
+
+.contact_label {
+  background-color: #005bac;
+  border-radius: 8px;
+  color: #FFFFFF;
+  font-size: 12px;
+  height: 22px;
+  line-height: 18px;
+  margin-left: 8px;
+  padding: 4px 10px;
+}
+
+.contact_input {
+  margin-left: 16px;
+  max-width: 605px;
+  width: 100%;
+}
+
+.count_characters {
+  color: #757575;
+  font-size: 20px;
+  margin-top: 124px;
+  text-align: right;
+}
+
+.count_characters.minus {
+  color: #ff063c;
+}
+
+.submit_button {
+  display: block;
+  background-color: #005bac;
+  border: 1px solid #005bac;
+  border-radius: 4px;
+  color: #FFFFFF;
+  padding: 16px 14px;
+  max-width: 188px;
+  margin: 0 auto;
+  width: 100%;
 }/*# sourceMappingURL=contact.css.map */

@@ -13,16 +13,27 @@ fv
   padding-bottom: 80px;
 }
 
+.fv_title_wrapper {
+  margin-bottom: 54px;
+  padding-top: 226px;
+}
+
 .fv_title {
   color: $blue;
   font-size: 80px;
   font-weight: Bold;
   line-height: 80px;
-  margin-bottom: 54px;
-  padding-top: 226px;
+  display: inline-block;
+  white-space: pre-line;
 }
 
-.fv_text_container {
+.letter {
+  opacity: 0;
+  display: inline-block;
+  transition: opacity 0.1s ease;
+}
+
+.fv_container {
   margin-left: 98px;
   max-width: 840px;
   width: 100%;
@@ -124,15 +135,51 @@ mission
   font-size: 20px;
   margin-left: 98px;
   margin-top: 80px;
+  margin-bottom: 80px;
   max-width: 840px;
   width: 100%;
 }
 
+.mission_image_layout {
+  height: 178px;
+}
+
+.mission_image_wrapper {
+  overflow: hidden;
+}
+
+.vertical_line {
+  background-color: $blue;
+  content: "";
+  display: block;
+  height: 100%;
+  position: relative;
+  width: 1px;
+  z-index: 5;
+}
+
 .mission_image {
   display: block;
-  margin: 80px auto;
-  max-width: 862px;
+  max-width: 360px;
+  position: relative;
+  transition: all 0.7s ease;
   width: 100%;
+}
+
+.mission_image:hover {
+  transform: scale(1.1);
+}
+
+.efficiency_image:hover {
+  content: url(../img/efficiency_2.png);
+}
+
+.quality_image:hover {
+  content: url(../img/quality_2.png);
+}
+
+.dependability_image:hover {
+  content: url(../img/dependability_2.png);
 }
 
 /*--------------------

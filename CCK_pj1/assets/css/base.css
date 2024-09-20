@@ -187,15 +187,26 @@ textarea {
 /*--------------------
 animation
 --------------------*/
-.scroll_animation {
+.scroll_right {
   opacity: 0;
-  transform: translateY(50px);
+  transform: translateX(-100%);
   transition: all 0.8s ease;
 }
 
-.scroll_animation.visible {
+.scroll_right.visible {
   opacity: 1;
   transform: translateY(0);
+}
+
+.scroll_left {
+  opacity: 0;
+  transform: translateX(100%);
+  transition: all 0.8s ease;
+}
+
+.scroll_left.visible {
+  opacity: 1;
+  transform: translateX(0);
 }
 
 /*--------------------
@@ -204,8 +215,8 @@ header
 .header {
   background-color: #FFFFFF;
   height: 60px;
-  margin-left: 24px;
   margin-right: 42px;
+  padding-left: 24px;
   position: fixed;
   width: 100%;
   z-index: 10;
