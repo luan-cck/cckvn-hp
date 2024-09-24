@@ -1,4 +1,21 @@
 /*--------------------
+common_settings
+--------------------*/
+.section_subtitle {
+  color: #333333;
+  font-size: 14px;
+}
+
+.section_title {
+  font-size: 40px;
+}
+
+.section_top_text {
+  color: #333333;
+  font-size: 18px;
+}
+
+/*--------------------
 service_top
 --------------------*/
 .service_top {
@@ -9,41 +26,84 @@ service_top
   padding-top: 226px;
 }
 
-/*--------------------
-service_contents
---------------------*/
-.service_contents {
-  background-color: #F8F9FA;
-  padding-top: 66px;
+.service_top_contents {
+  align-items: center;
+  justify-content: space-between;
 }
 
-.service_contents_layout {
-  gap: 0 99px;
+.link_container_left, .link_container_right {
+  gap: 20px;
+  flex-direction: column;
+  padding: 20px;
 }
 
-.service_link {
-  border: 1px solid #005bac;
+.link_container_left {
+  justify-content: center;
+}
+
+.service_top_list {
+  border: 2px solid #005bac;
   border-radius: 4px;
+  padding: 18px 64px 18px 12px;
+  transition: all 0.5s ease;
+}
+
+.service_top_list:hover {
+  background-color: #005bac;
+}
+
+.service_top_link {
   color: #005bac;
-  display: block;
-  margin-bottom: 17px;
-  max-width: 188px;
-  padding: 16px 80px 16px 14px;
-  width: 100%;
+  transition: all 0.5s ease;
 }
 
-.service_text_container {
-  margin-bottom: 125px;
-  max-width: 840px;
-  width: 100%;
+.service_top_list:hover .service_top_link {
+  color: #FFFFFF;
 }
 
-.service_contents_heading {
-  font-size: 40px;
-  margin-bottom: 24px;
+/*--------------------
+service_1(What is PWA?)
+--------------------*/
+.service_1 .section_top_text {
+  margin-bottom: 60px;
 }
 
-.service_contents_paragraph {
-  font-size: 20px;
+.tech_list {
+  flex-wrap: wrap;
+}
+
+.tech_category,
+.tech_detail {
+  align-items: center;
+  position: relative;
+  padding-bottom: 10px;
   margin-bottom: 20px;
+  width: 100%;
+}
+
+.tech_category {
+  align-items: center;
+  font-size: 22px;
+  justify-content: space-between;
+  max-width: 259px;
+  padding-right: 12px;
+  width: 100%;
+}
+
+.tech_detail {
+  font-size: 18px;
+  max-width: 670px;
+  padding: 26px 0 32px 0;
+  width: 100%;
+}
+
+.tech_category::after,
+.tech_detail::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: -1px;
+  width: 100%;
+  height: 1px;
+  background-color: #D9D9D9;
 }/*# sourceMappingURL=service.css.map */

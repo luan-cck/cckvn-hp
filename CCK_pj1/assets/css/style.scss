@@ -81,40 +81,170 @@ goal
   width: 100%;
 }
 
+.goal_button:hover {
+  background-color: $pure_white;
+  color: $blue;
+  opacity: 1;
+}
+
+.arrow svg {
+  transition: stroke 0.3s ease;
+}
+
+#arrow-path {
+  transition: d 0.3s ease;
+}
+
 /*--------------------
 portfolio
 --------------------*/
 
-.portfolio {
-  color: $blue;
-}
-
-.portfolio_image_layout {
+.portfolio_layout {
   gap: 0 24px;
   justify-content: center;
-  margin-top: 80px;
+  margin-top: 16px;
+}
+
+ .portfolio_container {
+  color: $pure_white;
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+ }
+
+ .overlay {
+  background-color: rgba(0, 0, 0, 0);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  transition: all 0.5s ease;
+  z-index: 5;
+ }
+
+ .portfolio_container:hover .overlay {
+  background-color: rgba(0, 0, 0, 0.5);
+ }
+
+ .portfolio_sub_container {
+  flex-direction: column;
+  gap: 17px 0;
+ }
+
+.portfolio_container:hover .portfolio_text_container {
+  transform: translateY(0);
+  transition: all 0.5s ease;
+}
+
+.portfolio_text_container {
+  background-color: rgba(0, 0, 0, 0.5);
+  bottom: 0;
+  left: 0;
+  padding: 20px 81px 20px 25px;
+  position: absolute;
+  transform: translateY(100%);
+  transition: transform 0.5s ease;
+  z-index: 7;
+}
+
+.portfolio_text_heading {
+  align-items: center;
+  gap: 0 9px;
+  margin-bottom: 17px;
+}
+
+.portfolio_text_heading .title {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.portfolio_text_heading .subtitle {
+  font-size: 18px;
+}
+
+.portfolio_text {
+  width: 100%;
+}
+
+.portfolio_link {
+  align-items: center;
+  justify-content: space-between;
+  margin: 0 0 0 auto;
+  max-width: 100px;
+  width: 100%;
+}
+
+.portfolio_link .img_container {
+  position: relative;
+}
+
+.portfolio_link .default_img {
+  opacity: 1;
+  transition: opacity 0.8s ease;
+}
+
+.portfolio_link .hover_img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  transition: opacity 0.8s ease;
+}
+
+.portfolio_link:hover {
+  color: $blue;
+  opacity: 1;
+}
+
+.portfolio_link:hover .default_img {
+  opacity: 0;
+}
+
+.portfolio_link:hover .hover_img {
+  opacity: 1;
 }
 
 .portfolio_image_1 {
   display: block;
-  max-width: 648px;
-  object-fit: contain;
+  height: 100%;
+  object-fit: cover;
+  object-position: 0% 50%;
+  transform: scale(1.1);
+  transition: transform 0.5s ease;
   width: 100%;
+}
+
+.portfolio_container:hover .portfolio_image_1 {
+  transform: scale(1.2) translateX(-50px);
 }
 
 .portfolio_image_2 {
   display: block;
-  margin-bottom: 17px;
-  max-width: 456px;
-  object-fit: contain;
+  height: 100%;
+  object-fit: cover;
+  object-position: 0% 50%;
+  transform: scale(1.15);
+  transition: transform 0.5s ease;
   width: 100%;
+}
+
+.portfolio_container:hover .portfolio_image_2 {
+  transform: scale(1.3) translateX(50px);
 }
 
 .portfolio_image_3 {
   display: block;
-  max-width: 456px;
-  object-fit: contain;
+  height: 100%;
+  object-fit: cover;
+  object-position: 0% 50%;
+  transform: scale(1.1);
+  transition: transform 0.5s ease;
   width: 100%;
+}
+
+.portfolio_container:hover .portfolio_image_3 {
+  transform: scale(1.3) translateX(50px);
 }
 
 /*--------------------
@@ -142,6 +272,7 @@ mission
 
 .mission_image_layout {
   height: 178px;
+  justify-content: center;
 }
 
 .mission_image_wrapper {
@@ -200,9 +331,19 @@ team
 }
 
 .team_member_container {
-  align-items: center;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr;
   gap: 33px;
   margin-bottom: 129px;
+}
+
+.team_member_list {
+  margin: 0 auto;
+}
+
+.team_member_list:hover {
+  transform: scale(1.15);
+  transition: all 0.2s ease-in-out;
 }
 
 .team_member_link {
@@ -210,14 +351,25 @@ team
   position: relative;
 }
 
+.team_member_link:hover {
+  opacity: 1;
+}
+
 .member_image {
   border-radius: 100px;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
   display: block;
+  height: 265px;
   max-width: 168px;
-
 }
 
 .member_text_container {
+  background: linear-gradient(
+    to bottom,
+      rgba(0, 0, 0, 0.015) 0%,
+      rgba(0, 0, 0, 0.24) 50%,
+      rgba(0, 0, 0, 0.3) 100%
+  );
   border-radius: 0 0 100px 100px;
   bottom: 0;
   flex-direction: column;
@@ -227,11 +379,6 @@ team
   position: absolute;
   transform: translateX(-50%);
   width: 100%;
-}
-
-.member_text_container:hover {
-  background-color: rgba(0, 0, 0, 0.5);
-  transition: all 0.4s ease-in-out;
 }
 
 .member_name, .member_role {
@@ -244,10 +391,4 @@ team
 
 .member_role {
   font-size: 12px;
-}
-
-.member_list_link {
-color: $gray;
-font-size: 20px;
-text-decoration: underline;
 }

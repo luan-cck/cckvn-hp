@@ -14,7 +14,11 @@
   <header class="header">
     <div class="header_layout flex">
       <div class="header_left_contents flex">
-        <h1 class="site_logo">LOGO</h1>
+        <h1 class="site_logo">
+          <a href="/index.html">
+            <img src="./assets/img/cck_logo.png" alt="logo">
+          </a>
+        </h1>
         <form class="search_form">
           <input type="text" placeholder="検索" class="search_input">
           <button type="submit" class="search_button">
@@ -27,33 +31,42 @@
           <ul class="header_nav_container flex azo_M">
             <li class="header_nav_list">
               <a href="#" class="header_nav_link flex">
-                <span>About Us</span>
+                <span class="link_text">Home</span>
                 <span>
-                  <img src="./assets/img/arrow_below.svg" alt="arrow_below">
+                  <svg class="arrow_svg" width="10" height="7" viewBox="0 0 10 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path class="arrow_path" d="M1 1L5 5L9 1" stroke="#E5E3E1" stroke-width="1.5" stroke-linecap="round" />
+                  </svg>
                 </span>
               </a>
             </li>
             <li class="header_nav_list">
               <a href="./service.html" class="header_nav_link flex">
-                <span>Service</span>
+                <span class="link_text">Service</span>
                 <span>
-                  <img src="./assets/img/arrow_below.svg" alt="arrow_below">
+                  <svg class="arrow_svg" width="10" height="7" viewBox="0 0 10 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path class="arrow_path" d="M1 1L5 5L9 1" stroke="#E5E3E1" stroke-width="1.5"
+                      stroke-linecap="round" />
+                  </svg>
                 </span>
               </a>
             </li>
             <li class="header_nav_list">
               <a href="#" class="header_nav_link flex">
-                <span>Portfolio</span>
+                <span class="link_text">Portfolio</span>
                 <span>
-                  <img src="./assets/img/arrow_below.svg" alt="arrow_below">
+                  <svg class="arrow_svg" width="10" height="7" viewBox="0 0 10 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path class="arrow_path" d="M1 1L5 5L9 1" stroke="#E5E3E1" stroke-width="1.5" stroke-linecap="round" />
+                  </svg>
                 </span>
               </a>
             </li>
             <li class="header_nav_list">
               <a href="#" class="header_nav_link flex">
-                <span>Contact</span>
+                <span class="link_text">Contact</span>
                 <span>
-                  <img src="./assets/img/arrow_below.svg" alt="arrow_below">
+                  <svg class="arrow_svg" width="10" height="7" viewBox="0 0 10 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path class="arrow_path" d="M1 1L5 5L9 1" stroke="#E5E3E1" stroke-width="1.5" stroke-linecap="round" />
+                  </svg>
                 </span>
               </a>
             </li>
@@ -69,7 +82,7 @@
 
   <main class="main">
     <section class="fv">
-      <div class="w_1280 wrapper">
+      <div class="w_944 wrapper">
         <div class="fv_title_wrapper">
           <h2 class="fv_title azo_M animatedTitle">TECHNICALLY</h2>
           <h2 class="fv_title azo_M animatedTitle">IT'S NOT OUR PROBLEM</h2>
@@ -96,7 +109,7 @@
       </div>
     </section>
     <section class="goal">
-      <div class="w_1280 wrapper">
+      <div class="w_944 wrapper">
         <h3 class="section_subtitle azo_M">Team Goal</h3>
         <h2 class="section_title azo_M scroll_right">CORE WORKING PRINCIPLE</h2>
         <div class="goal_contents">
@@ -105,9 +118,9 @@
           </p>
           <a href="#" class="goal_button flex">
             <span class="goal_button_text azo_R">GO DETAILS</span>
-            <span>
-              <svg width="7" height="13" viewBox="0 0 7 13" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M1 11.5L6 6.5L1 1.5" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" />
+            <span class="arrow">
+              <svg id="arrow-svg" width="7" height="13" viewBox="0 0 7 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path id="arrow-path" d="M1 11.5L6 6.5L1 1.5" stroke="currentColor" stroke-width="1.25" stroke-linecap="round" />
               </svg>
             </span>
           </a>
@@ -115,21 +128,65 @@
       </div>
     </section>
     <section class="portfolio">
-      <div class="w_1280 wrapper">
-        <h3 class="section_subtitle azo_M">Have look at our past project</h3>
+      <div class="w_944 wrapper">
+        <h3 class="section_subtitle azo_M">Our past project</h3>
         <h2 class="section_title azo_M">PORTFOLIO</h2>
-        <div class="portfolio_image_layout flex">
-          <img src="./assets/img/portfolio_1.png" alt="portfolio image" class="portfolio_image_1">
-          <div class="portfolio_image_container">
-            <img src="./assets/img/portfolio_2.png" alt="portfolio image" class="portfolio_image_2">
-            <img src="./assets/img/portfolio_3.png" alt="portfolio image" class="portfolio_image_3">
+        <a href="/portfolio.html" class="portfolio_link more_info_link azo_R flex">
+          <span>See more</span>
+          <span class="img_container">
+            <img src="./assets/img/arrow_right.svg" class="default_img" alt="Arrow Right">
+            <img src="./assets/img/arrow_left.svg" class="hover_img" alt="Arrow Left">
+          </span>
+        </a>
+        <div class="portfolio_layout flex">
+          <div class="portfolio_container">
+            <div class="overlay"></div>
+            <img src="./assets/img/portfolio_1.png" alt="portfolio image" class="portfolio_image_1">
+            <div class="portfolio_text_container">
+              <h3 class="portfolio_text_heading flex azo_R">
+                <span class="title">UPs</span>
+                <span class="subtitle">- Order managemest website</span>
+              </h3>
+              <p class="portfolio_text azo_L">
+                From handpicked IT talent to cost-effective software development teams built in less than 2 years, we provide everything
+                you need to overcome any barrier to scalability.
+              </p>
+            </div>
+          </div>
+          <div class="portfolio_sub_container flex">
+            <div class="portfolio_container">
+              <div class="overlay"></div>
+              <img src="./assets/img/portfolio_2.png" alt="portfolio image" class="portfolio_image_2">
+              <div class="portfolio_text_container">
+                <h3 class="portfolio_text_heading flex azo_R">
+                  <span class="title">UPs</span>
+                  <span class="subtitle">- Order management website</span>
+                </h3>
+                <p class="portfolio_text azo_L">
+                  From handpicked IT talent to cost-effective software development teams built in less than 2 years,
+                </p>
+              </div>
+            </div>
+            <div class="portfolio_container">
+              <div class="overlay"></div>
+              <img src="./assets/img/portfolio_3.png" alt="portfolio image" class="portfolio_image_3">
+              <div class="portfolio_text_container">
+                <h3 class="portfolio_text_heading flex azo_R">
+                  <span class="title">UPs</span>
+                  <span class="subtitle">- Order management website</span>
+                </h3>
+                <p class="portfolio_text azo_L">
+                  From handpicked IT talent to cost-effective software development teams built in less than 2 years,
+                </p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
     <section class="mission">
-      <div class="w_1280 wrapper mission_bg">
+      <div class="w_944 wrapper mission_bg">
         <h3 class="section_subtitle azo_M">Have look at our past project</h3>
         <h2 class="section_title azo_M scroll_left">MISSION AND VALUES</h2>
         <p class="mission_text azo_L scroll_right">
@@ -151,18 +208,18 @@
       </div>
     </section>
     <section class="team">
-      <div class="w_1280 wrapper">
-        <h3 class="section_subtitle azo_M">Meet Ours Team</h3>
-        <h2 class="section_title azo_M">TEAM BEHIND THE WORKS</h2>
+      <div class="w_944 wrapper">
+        <h3 class="section_subtitle azo_M">Team behind work</h3>
+        <h2 class="section_title azo_M">OUR TEAM</h2>
         <p class="team_text azo_L">
           Our mission is to boost software outsourcing efficiency with smart strategy, fast team ramp-up and effective managemen
         </p>
-        <ul class="team_member_container flex">
+        <ul class="team_member_container grid">
           <li class="team_member_list">
             <a href="#" class="team_member_link">
               <img src="./assets/img/member_image_1.png" alt="team member image" class="member_image">
               <div class="member_text_container flex">
-                <span class="member_name azo_M">Mr. Janies</span>
+                <span class="member_name azo_M">Luan Dinh</span>
                 <span class="member_role azo_L">Leadership</span>
               </div>
             </a>
@@ -171,7 +228,7 @@
             <a href="#" class="team_member_link">
               <img src="./assets/img/member_image_2.png" alt="team member image" class="member_image">
               <div class="member_text_container flex">
-                <span class="member_name azo_M">Mr. Janies</span>
+                <span class="member_name azo_M">Tank</span>
                 <span class="member_role azo_L">Leadership</span>
               </div>
             </a>
@@ -180,7 +237,7 @@
             <a href="#" class="team_member_link">
               <img src="./assets/img/member_image_3.png" alt="team member image" class="member_image">
               <div class="member_text_container flex">
-                <span class="member_name azo_M">Mr. Janies</span>
+                <span class="member_name azo_M">Vinh Nguyen</span>
                 <span class="member_role azo_L">Leadership</span>
               </div>
             </a>
@@ -189,7 +246,7 @@
             <a href="#" class="team_member_link">
               <img src="./assets/img/member_image_4.png" alt="team member image" class="member_image">
               <div class="member_text_container flex">
-                <span class="member_name azo_M">Mr. Janies</span>
+                <span class="member_name azo_M">Hoan Vu</span>
                 <span class="member_role azo_L">Leadership</span>
               </div>
             </a>
@@ -198,13 +255,55 @@
             <a href="#" class="team_member_link">
               <img src="./assets/img/member_image_5.png" alt="team member image" class="member_image">
               <div class="member_text_container flex">
-                <span class="member_name azo_M">Mr. Janies</span>
+                <span class="member_name azo_M">Le V Phi</span>
                 <span class="member_role azo_L">Leadership</span>
               </div>
             </a>
           </li>
           <li class="team_member_list">
-            <a href="#" class="member_list_link azo_M">SEE ALL</a>
+            <a href="#" class="team_member_link">
+              <img src="./assets/img/member_image_6.png" alt="team member image" class="member_image">
+              <div class="member_text_container flex">
+                <span class="member_name azo_M">Khai</span>
+                <span class="member_role azo_L">Leadership</span>
+              </div>
+            </a>
+          </li>
+          <li class="team_member_list">
+            <a href="#" class="team_member_link">
+              <img src="./assets/img/member_image_7.png" alt="team member image" class="member_image">
+              <div class="member_text_container flex">
+                <span class="member_name azo_M">Hoang</span>
+                <span class="member_role azo_L">IT</span>
+              </div>
+            </a>
+          </li>
+          <li class="team_member_list">
+            <a href="#" class="team_member_link">
+              <img src="./assets/img/member_image_8.png" alt="team member image" class="member_image">
+              <div class="member_text_container flex">
+                <span class="member_name azo_M">Chinh Nguyen</span>
+                <span class="member_role azo_L">Designer</span>
+              </div>
+            </a>
+          </li>
+          <li class="team_member_list">
+            <a href="#" class="team_member_link">
+              <img src="./assets/img/member_image_9.png" alt="team member image" class="member_image">
+              <div class="member_text_container flex">
+                <span class="member_name azo_M">Duc Nguyen</span>
+                <span class="member_role azo_L">Comter</span>
+              </div>
+            </a>
+          </li>
+          <li class="team_member_list">
+            <a href="#" class="team_member_link">
+              <img src="./assets/img/member_image_10.png" alt="team member image" class="member_image">
+              <div class="member_text_container flex">
+                <span class="member_name azo_M">Le V Phi</span>
+                <span class="member_role azo_L">Leadership</span>
+              </div>
+            </a>
           </li>
         </ul>
       </div>
@@ -212,7 +311,7 @@
   </main>
 
     <footer class="footer">
-      <div class="w_1280 wrapper">
+      <div class="w_944 wrapper">
         <h2 class="footer_logo azo_B">LOGO</h2>
         <div class="company_section">
           <h4 class="information_title">JAPAN OFFICIAL</h4>

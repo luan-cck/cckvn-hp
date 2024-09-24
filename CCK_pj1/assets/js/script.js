@@ -1,4 +1,26 @@
 /*--------------------
+header_nav_svg_animation
+--------------------*/
+document.addEventListener('DOMContentLoaded', () => {
+  const headerNavLinks = document.querySelectorAll('.header_nav_link');
+
+  headerNavLinks.forEach(headerNavLink => {
+    const arrowPath = headerNavLink.querySelector('path');
+
+    headerNavLink.addEventListener('mouseenter', () => {
+      arrowPath.setAttribute('d', 'M1 6L5 2L9 6');
+      arrowPath.setAttribute('stroke', '#005BAC');
+    });
+
+    headerNavLink.addEventListener('mouseleave', () => {
+      arrowPath.setAttribute('d', 'M1 1L5 5L9 1');
+      arrowPath.setAttribute('stroke', '#E5E3E1');
+    });
+  });
+});
+
+
+/*--------------------
 title_animation
 --------------------*/
 document.addEventListener('DOMContentLoaded', () => {
@@ -46,6 +68,27 @@ document.addEventListener('DOMContentLoaded', () => {
     observer.observe(item);
   })
 })
+
+
+/*--------------------
+button_hover_animation
+--------------------*/
+document.addEventListener('DOMContentLoaded', () => {
+  const goalButton = document.querySelector('.goal_button');
+  const arrowPath = document.getElementById('arrow-path');
+
+  goalButton.addEventListener('mouseenter', () => {
+    arrowPath.setAttribute('d', 'M6 11.5L1 6.5L6 1.5');
+    arrowPath.setAttribute('stroke', '#B4B4B4');
+  });
+
+  goalButton.addEventListener('mouseleave', () => {
+    arrowPath.setAttribute('d', 'M1 11.5L6 6.5L1 1.5');
+    arrowPath.setAttribute('stroke', 'currentColor');
+  });
+});
+
+
 
 /*--------------------
 count_characters
