@@ -64,12 +64,12 @@ service_top
 /*--------------------
 service_1(What is PWA?)
 --------------------*/
-.service_1 .section_top_text {
-  margin-bottom: 60px;
+.service_1 {
+  margin-bottom: 150px;
 }
 
-.tech_list {
-  flex-wrap: wrap;
+.service_1 .section_top_text {
+  margin-bottom: 60px;
 }
 
 .tech_category,
@@ -106,4 +106,105 @@ service_1(What is PWA?)
   width: 100%;
   height: 1px;
   background-color: #D9D9D9;
+}
+
+/*--------------------
+service_2(APP Development System)
+--------------------*/
+.service_2 {
+  margin-bottom: 150px;
+}
+
+.service_2 .section_title {
+  margin-bottom: 60px;
+}
+
+.service_2_layout {
+  justify-content: space-between;
+}
+
+.service_2_heading {
+  color: #0A50B1;
+  font-size: 28px;
+}
+
+.service_2_text {
+  font-size: 18px;
+  margin-bottom: 60px;
+}
+
+.service_2_text_bottom {
+  margin-bottom: 0;
+}
+
+.service_2_image {
+  max-width: 382px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  width: 100%;
+}
+
+/*--------------------
+service_3(Development System)
+--------------------*/
+.service_3 {
+  margin-bottom: 150px;
+}
+
+.service_3 .section_title {
+  margin-bottom: 60px;
+}
+
+.section_3_image {
+  max-width: 928px;
+  width: 100%;
+}
+
+/*--------------------
+service_4(Development Project Flow)
+--------------------*/
+.service_4 {
+  margin-bottom: 150px;
+}
+
+.service_4 .section_title {
+  margin-bottom: 60px;
+}
+
+.service_4_image {
+  margin-bottom: 60px;
+  max-width: 940px;
+  width: 100%;
+}
+
+.service_4_heading {
+  color: #0A50B1;
+  font-size: 28px;
+  margin-bottom: 16px;
+}
+
+.service_4_text {
+  font-size: 18px;
+}
+
+/*--------------------
+service_5(Native APP Flow)
+--------------------*/
+.service_5 {
+  margin-bottom: 2343px;
+}
+
+.service_5 .section_title {
+  margin-bottom: 60px;
+}
+
+.service_5_heading {
+  color: #0A50B1;
+  font-size: 28px;
+  margin-bottom: 16px;
+}
+
+.service_5_text {
+  font-size: 18px;
+  margin-bottom: 60px;
 }/*# sourceMappingURL=service.css.map */

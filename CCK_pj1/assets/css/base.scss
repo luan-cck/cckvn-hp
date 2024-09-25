@@ -36,10 +36,6 @@ a {
   transition: 0.4s;
 }
 
-a:hover {
-  opacity: 0.7;
-}
-
 input,
 textarea {
   box-sizing: border-box;
@@ -48,6 +44,12 @@ textarea {
 
 .wrapper {
   margin: 0 auto;
+}
+
+.w_1124 {
+  max-width: 1124px;
+  padding: 0;
+  width: 100%;
 }
 
 .w_944 {
@@ -161,17 +163,6 @@ textarea {
 
 .page_title {
   font-size: 75px;
-}
-
-.section_subtitle {
-  font-size: 24px;
-  margin-bottom: 10px;
-  padding-top: 64px;
-}
-
-.section_title {
-  font-size: 50px;
-  font-weight: bold;
 }
 
 .aside_text {
@@ -392,31 +383,101 @@ footer
 --------------------*/
 .footer {
   background-color: $blue;
+  padding: 36px 0;
+}
+
+.footer_layout {
+  justify-content: space-between;
 }
 
 .footer_logo {
-  color: $pure_white;
-  font-size: 50px;
-  margin-bottom: 48px;
-  padding-top: 95px;
+  border-radius: 8px;
+  max-width: 60px;
+  object-fit: contain;
+  width: 100%;
+}
+
+.footer_right_contents {
+  align-items: center;
+  gap: 0 42px;
 }
 
 .company_section {
-  color: $gray;
-  margin-bottom: 24px;
+  color: #D9D9D9;
+  font-size: 12px;
+  max-width: 247px;
+  width: 100%;
 }
 
 .information_title {
+  color: $pure_white;
   font-size: 14px;
   font-style: italic;
   margin-bottom: 12px;
 }
 
-.contact_information {
-  color: $gray;
-  padding-bottom: 95px;
+.company_address {
+  font-style: normal;
 }
 
-.contact_information a {
-  color: $gray;
+.mail, .tel {
+  color: #D9D9D9;
+  display: block;
+}
+
+.footer .vertical_line {
+  background-color: #D9D9D9;
+  display: block;
+  height: 66px;
+  width: 1px;
+}
+
+.footer_left_contents {
+  align-items: center;
+  gap: 0 42px;
+  max-width: 280px;
+  width: 100%;
+}
+
+.footer_nav_list {
+  margin-bottom: 11px;
+  position: relative;
+  text-align: right;
+  transition: all 0.3s ease;
+}
+
+.footer_nav_list::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 1px;
+  background-color: $pure_white;
+  transition: width 0.2s ease-in-out;
+}
+
+.footer_nav_list:hover::after {
+  width: 100%;
+}
+
+.footer_link {
+  align-items: center;
+  color: #D9D9D9;
+  justify-content: space-between;
+  transition: none;
+  width: 100%;
+}
+
+.footer_nav_list:hover .footer_link {
+  font-style: italic;
+}
+
+.footer .arrow_left {
+  opacity: 0;
+  transition: all 0.3s ease;
+}
+
+.footer_nav_list:hover .arrow_left {
+  opacity: 1;
 }

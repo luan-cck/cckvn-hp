@@ -1,4 +1,17 @@
 /*--------------------
+common_settings
+--------------------*/
+.section_subtitle {
+  font-size: 30px;
+  margin-bottom: 10px;
+  padding-top: 64px;
+}
+
+.section_title {
+  font-size: 90px;
+}
+
+/*--------------------
 fv
 --------------------*/
 .fv {
@@ -15,9 +28,9 @@ fv
 
 .fv_title {
   color: #005bac;
-  font-size: 80px;
-  font-weight: Bold;
-  line-height: 80px;
+  font-size: 100px;
+  letter-spacing: -1px;
+  line-height: 120px;
   display: inline-block;
   white-space: pre-line;
 }
@@ -81,7 +94,6 @@ goal
 .goal_button:hover {
   background-color: #FFFFFF;
   color: #005bac;
-  opacity: 1;
 }
 
 .arrow svg {
@@ -190,7 +202,6 @@ portfolio
 
 .portfolio_link:hover {
   color: #005bac;
-  opacity: 1;
 }
 
 .portfolio_link:hover .default_img {
@@ -206,15 +217,15 @@ portfolio
   height: 100%;
   -o-object-fit: cover;
      object-fit: cover;
-  -o-object-position: 0% 50%;
-     object-position: 0% 50%;
-  transform: scale(1.1);
+  -o-object-position: 25% 50%;
+     object-position: 25% 50%;
+  transform: scale(1.15);
   transition: transform 0.5s ease;
   width: 100%;
 }
 
 .portfolio_container:hover .portfolio_image_1 {
-  transform: scale(1.2) translateX(-50px);
+  transform: scale(1.3) translateX(-50px);
 }
 
 .portfolio_image_2 {
@@ -258,15 +269,10 @@ mission
   background-repeat: no-repeat;
 }
 
-.mission .section_subtitle, .mission .section_title {
-  color: #005bac;
-}
-
 .mission_text {
   color: #23254C;
   font-size: 20px;
   margin-left: 98px;
-  margin-top: 80px;
   margin-bottom: 80px;
   max-width: 840px;
   width: 100%;
@@ -341,20 +347,17 @@ team
 
 .team_member_list {
   margin: 0 auto;
+  overflow: hidden;
 }
 
 .team_member_list:hover {
   transform: scale(1.15);
-  transition: all 0.2s ease-in-out;
+  transition: all 0.5s ease-in-out;
 }
 
 .team_member_link {
   color: #FFFFFF;
   position: relative;
-}
-
-.team_member_link:hover {
-  opacity: 1;
 }
 
 .member_image {
@@ -374,8 +377,17 @@ team
   max-width: 168px;
   padding: 18px 0 28px 0;
   position: absolute;
-  transform: translateX(-50%);
+  transform: translate(-50%);
   width: 100%;
+}
+
+.member_name, .member_role {
+  transform: translateY(90px);
+  transition: all 0.5s ease;
+}
+
+.team_member_link:hover .member_name, .team_member_link:hover .member_role {
+  transform: translateY(0);
 }
 
 .member_name, .member_role {
