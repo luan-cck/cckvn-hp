@@ -19,11 +19,26 @@ common_settings
 service_top
 --------------------*/
 .service_top {
-  background-image: url(../img/top_background.png);
   background-position-x: right;
   background-repeat: no-repeat;
+  height: 100vh;
   padding-bottom: 228px;
   padding-top: 226px;
+  position: relative;
+}
+
+.background_image {
+  background-image: url(../img/background.png);
+  background-size: contain;
+  background-repeat: no-repeat;
+  height: 100%;
+  left: 0;
+  position: absolute;
+  top: 0;
+  transform: rotateY(-180deg);
+  transition: all 0.5s ease;
+  width: 100%;
+  z-index: -5;
 }
 
 .service_top_contents {
@@ -191,7 +206,7 @@ service_4(Development Project Flow)
 service_5(Native APP Flow)
 --------------------*/
 .service_5 {
-  margin-bottom: 2343px;
+  margin-bottom: 234px;
 }
 
 .service_5 .section_title {

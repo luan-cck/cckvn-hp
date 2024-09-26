@@ -1,0 +1,124 @@
+/*--------------------
+common_settings
+--------------------*/
+.main_portfolio {
+  background-color: #F8F9FA;
+}
+
+/*--------------------
+project
+--------------------*/
+.project {
+  padding-top: 1px;
+  padding-bottom: 240px;
+}
+
+.project_title {
+  color: #333333;
+  font-size: 40px;
+  margin-bottom: 26px;
+  margin-top: 148px;
+}
+
+.project_subtitle {
+  color: #333333;
+  font-size: 20px;
+  margin-bottom: 60px;
+}
+
+.project_layout {
+  align-items: flex-start;
+  background-color: #FFFFFF;
+  box-shadow: 0 4px 17px rgba(0, 0, 0, 0.12);
+  gap: 18px;
+  justify-content: space-between;
+  padding: 49px 72px 269px;
+}
+
+.project_list_container {
+  border: 1px solid #757575;
+  padding: 17px 0;
+}
+
+.project_list_container .current {
+  background-color: #E5EBF4;
+}
+
+.project_list {
+  margin-bottom: 4px;
+  padding: 12px 12px 17px 12px;
+  transition: all 0.5s ease;
+}
+
+.project_list:hover {
+  background-color: #E5EBF4;
+}
+
+.project_list:last-of-type {
+  margin-bottom: 0;
+}
+
+.project_list .current {
+  border-bottom: 1px solid #005bac;
+  color: #005bac;
+}
+
+.project_list:hover .project_link {
+  color: #005bac;
+}
+
+.project_link {
+  align-items: center;
+  color: #757575;
+  gap: 0 32px;
+  justify-content: space-between;
+}
+
+.project_link svg {
+  transform: rotate(0deg);
+}
+
+.project_list:hover .project_link svg {
+  transform: rotate(180deg);
+}
+
+.project_link svg,
+.project_link path {
+  transition: all 0.3s ease;
+}
+
+.project_contents {
+  max-width: 742px;
+  width: 100%;
+}
+
+.project_image {
+  max-width: 650px;
+  transition: all 0.5s ease;
+  width: 100%;
+}
+
+.project_image:hover {
+  transform: scale(1.05);
+}
+
+.project_heading {
+  font-size: 30px;
+  margin: 20px 0 29px 12px;
+}
+
+.project_description {
+  background-color: #494949;
+  color: #FFFFFF;
+  font-size: 20px;
+  padding: 9px 13px;
+}
+
+.project_introduction {
+  background-color: #F8F9FA;
+  border: 1px solid #757575;
+  border-radius: 2px;
+  color: #23254C;
+  font-size: 18px;
+  padding: 24px 10px;
+}/*# sourceMappingURL=portfolio.css.map */

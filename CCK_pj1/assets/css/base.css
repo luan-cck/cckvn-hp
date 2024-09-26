@@ -49,6 +49,12 @@ textarea {
   width: 100%;
 }
 
+.w_1080 {
+  max-width: 1080px;
+  padding: 0;
+  width: 100%;
+}
+
 .w_944 {
   max-width: 944px;
   padding: 0;
@@ -235,6 +241,7 @@ header
   margin-right: 42px;
   padding-left: 24px;
   position: fixed;
+  top: 0;
   width: 100%;
   z-index: 10;
 }

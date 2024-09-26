@@ -3,9 +3,19 @@ contact_top
 --------------------*/
 .contact_main {
   background-color: #F8F9FA;
+  padding-bottom: 192px;
+}
+
+.contact_success_main {
+  min-height: calc(100vh - 233px);
 }
 
 .contact {
+  padding-top: 221px;
+}
+
+.contact_success {
+  margin-bottom: 100px;
   padding-top: 221px;
 }
 
@@ -25,14 +35,20 @@ contact_form
 --------------------*/
 .contacct_form {
   background-color: #FFFFFF;
+  box-shadow: 0 0 17px rgba(0, 0, 0, 0.06);
   max-width: 1128px;
   padding: 101px 106px 111px 106px;
   width: 100%;
 }
 
 .contact_layout {
+  align-items: baseline;
   justify-content: flex-end;
   margin-bottom: 24px;
+}
+
+.contact_layout_last {
+  margin-bottom: 8px;
 }
 
 .contact_list {
@@ -56,15 +72,22 @@ contact_form
 }
 
 .contact_input {
+  border: 1px solid #E5E3E1;
+  border-radius: 8px;
   margin-left: 16px;
   max-width: 605px;
+  padding: 16px 20px;
   width: 100%;
+}
+
+.contact_layout_last textarea {
+  line-height: 20px;
 }
 
 .count_characters {
   color: #757575;
-  font-size: 20px;
-  margin-top: 124px;
+  font-size: 16px;
+  margin-bottom: 64px;
   text-align: right;
 }
 

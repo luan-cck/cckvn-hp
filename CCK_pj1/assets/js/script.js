@@ -19,6 +19,26 @@ document.addEventListener('DOMContentLoaded', () => {
   });
 });
 
+/*--------------------
+portfolio_svg_animation
+--------------------*/
+
+document.addEventListener('DOMContentLoaded', () => {
+  const projectLinks = document.querySelectorAll('.project_list');
+
+  projectLinks.forEach(projectLink => {
+    const pathElement = projectLink.querySelector('path');
+
+    projectLink.addEventListener('mouseenter', () => {
+      pathElement.setAttribute('stroke', '#005BAC');
+    });
+
+    projectLink.addEventListener('mouseleave', () => {
+      pathElement.setAttribute('stroke', '#757575');
+    });
+  });
+});
+
 
 /*--------------------
 title_animation
@@ -26,23 +46,33 @@ title_animation
 document.addEventListener('DOMContentLoaded', () => {
   const titles = document.querySelectorAll('.animatedTitle');
 
-  titles.forEach(title => {
-    const text = title.innerHTML;
-    title.innerHTML = '';
+  const titleObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting) {
+        const title = entry.target;
+        const text = title.innerHTML;
+        title.innerHTML = '';
 
-    text.split('').forEach((char, index) => {
-      const span = document.createElement('span');
-      span.classList.add('letter');
-      span.innerHTML = char === ' ' ? '&nbsp;' : char;
-      title.appendChild(span);
+        text.split('').forEach((char, index) => {
+          const span = document.createElement('span');
+          span.classList.add('letter');
+          span.innerHTML = char === ' ' ? '&nbsp;' : char;
+          title.appendChild(span);
 
-      setTimeout(() => {
-        span.style.opacity = 1;
-      }, index * 20);
+          setTimeout(() => {
+            span.style.opacity = 1;
+          }, index * 20);
+        });
+
+        titleObserver.unobserve(title);
+      }
     });
+  }, { threshold: 0.1 });
+
+  titles.forEach(title => {
+    titleObserver.observe(title);
   });
 });
-
 
 
 /*--------------------
@@ -89,7 +119,6 @@ document.addEventListener('DOMContentLoaded', () => {
 });
 
 
-
 /*--------------------
 count_characters
 --------------------*/
@@ -101,3 +130,20 @@ textarea.addEventListener('input', () => {
   const remainingCharacters = maxCharacters - textarea.value.length;
   countDisplay.textContent = `Remaining Characters: ${remainingCharacters}`;
 })
+
+
+/*--------------------
+contact_form
+--------------------*/
+
+document.getElementById('contactForm').addEventListener('submit', function(event) {
+    const form = event.target;
+    if (!form.checkValidity()) {
+      event.preventDefault();
+      alert('必須項目をすべて入力してください。');
+      return;
+  }
+
+    event.preventDefault();
+    window.location.href = 'contact_success.html';
+  });
