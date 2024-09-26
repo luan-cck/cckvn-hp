@@ -21,6 +21,7 @@ fv
 --------------------*/
 
 .fv {
+  overflow: hidden;
   padding-bottom: 80px;
   position: relative;
 }
@@ -29,11 +30,12 @@ fv
   background-image: url(../img/background.png);
   background-size: contain;
   background-repeat: no-repeat;
+  filter: opacity(0.5);
   height: 100%;
   position: absolute;
   right: 0;
   top: 0;
-  transform: rotate(270deg) translateY(45%);
+  transform: rotate(270deg) translate(15%, 45%) scale(1.2);
   transition: all 0.5s ease;
   width: 100%;
   z-index: -5;
