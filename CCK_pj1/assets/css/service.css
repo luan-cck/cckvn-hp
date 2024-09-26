@@ -222,4 +222,9 @@ service_5(Native APP Flow)
 .service_5_text {
   font-size: 18px;
   margin-bottom: 60px;
+}
+
+.service_5_image {
+  max-width: 940px;
+  width: 100%;
 }/*# sourceMappingURL=service.css.map */
