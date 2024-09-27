@@ -61,7 +61,6 @@ service_top
 .service_top_list {
   border: 2px solid #005bac;
   border-radius: 4px;
-  padding: 18px 64px 18px 12px;
   transition: all 0.5s ease;
 }
 
@@ -71,6 +70,8 @@ service_top
 
 .service_top_link {
   color: #005bac;
+  display: block;
+  padding: 18px 64px 18px 12px;
   transition: all 0.5s ease;
 }
 

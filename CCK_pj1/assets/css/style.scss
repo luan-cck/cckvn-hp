@@ -284,7 +284,6 @@ mission
 
 .mission_text {
   color: #23254C;
-  font-size: 20px;
   margin-left: 98px;
   margin-bottom: 80px;
   max-width: 840px;
@@ -292,11 +291,18 @@ mission
 }
 
 .mission_image_layout {
-  justify-content: center;
+  justify-content: space-around;
 }
 
 .mission_image_wrapper {
+  align-items: center;
+  color: $dark_blue;
+  flex-direction: column;
+  gap: 10px;
+  max-width: 304px;
   overflow: hidden;
+  text-align: center;
+  width: 100%;
 }
 
 .vertical_line {
@@ -311,11 +317,15 @@ mission
 
 .mission_image {
   display: block;
-  max-width: 360px;
+  max-width: 100px;
   object-fit: contain;
   position: relative;
   transition: all 0.7s ease;
   width: 100%;
+}
+
+.mission_content_text {
+  font-size: 14px;
 }
 
 // .mission_image:hover {
