@@ -1,233 +1,214 @@
-/*--------------------
-common_settings
---------------------*/
 .section_subtitle {
-  color: #333333;
-  font-size: 14px;
+	color: #333;
+	font-size: 14px;
 }
 
 .section_title {
-  font-size: 40px;
+	font-size: 40px;
 }
 
 .section_top_text {
-  color: #333333;
-  font-size: 18px;
+	color: #333;
+	font-size: 18px;
 }
 
-/*--------------------
-service_top
---------------------*/
 .service_top {
-  background-position-x: right;
-  background-repeat: no-repeat;
-  height: 100vh;
-  overflow: hidden;
-  padding-bottom: 228px;
-  padding-top: 226px;
-  position: relative;
+	background-position-x: right;
+	background-repeat: no-repeat;
+	height: 100vh;
+	overflow: hidden;
+	padding-bottom: 228px;
+	padding-top: 226px;
+	position: relative;
 }
 
 .background_image {
-  filter: opacity(0.5);
-  background-image: url(../img/background.png);
-  background-size: contain;
-  background-repeat: no-repeat;
-  height: 100%;
-  left: 0;
-  position: absolute;
-  top: 0;
-  transform: rotateY(-180deg) translate(-250px, -126px) scale(1.35);
-  transition: all 0.5s ease;
-  width: 100%;
-  z-index: -5;
+	background-image: url(../img/background.png);
+	background-repeat: no-repeat;
+	background-size: contain;
+	filter: opacity(0.5);
+	height: 100%;
+	left: 0;
+	position: absolute;
+	top: 0;
+	transform: rotateY(-180deg) translate(-250px, -126px) scale(1.35);
+	transition: all .5s ease;
+	width: 100%;
+	z-index: -5;
 }
 
 .service_top_contents {
-  align-items: center;
-  justify-content: space-between;
+	align-items: center;
+	justify-content: space-between;
 }
 
-.link_container_left, .link_container_right {
-  gap: 20px;
-  flex-direction: column;
-  padding: 20px;
+.link_container_left,
+.link_container_right {
+	flex-direction: column;
+	gap: 20px;
+	padding: 20px;
 }
 
 .link_container_left {
-  justify-content: center;
+	justify-content: center;
 }
 
 .service_top_list {
-  border: 2px solid #005bac;
-  border-radius: 4px;
-  transition: all 0.5s ease;
+	border: 2px solid #005bac;
+	border-radius: 4px;
+	transition: all .5s ease;
 }
 
 .service_top_list:hover {
-  background-color: #005bac;
+	background-color: #005bac;
 }
 
 .service_top_link {
-  color: #005bac;
-  display: block;
-  padding: 18px 64px 18px 12px;
-  transition: all 0.5s ease;
+	color: #005bac;
+	display: block;
+	padding: 18px 64px 18px 12px;
+	transition: all .5s ease;
 }
 
 .service_top_list:hover .service_top_link {
-  color: #FFFFFF;
+	color: #fff;
 }
 
-/*--------------------
-service_1(What is PWA?)
---------------------*/
 .service_1 {
-  margin-bottom: 150px;
+	margin-bottom: 150px;
 }
 
 .service_1 .section_top_text {
-  margin-bottom: 60px;
+	margin-bottom: 60px;
 }
 
 .tech_category,
 .tech_detail {
-  align-items: center;
-  position: relative;
-  padding-bottom: 10px;
-  margin-bottom: 20px;
-  width: 100%;
+	align-items: center;
+	margin-bottom: 20px;
+	padding-bottom: 10px;
+	position: relative;
+	width: 100%;
 }
 
 .tech_category {
-  align-items: center;
-  font-size: 22px;
-  justify-content: space-between;
-  max-width: 259px;
-  padding-right: 12px;
-  width: 100%;
+	align-items: center;
+	font-size: 22px;
+	justify-content: space-between;
+	max-width: 259px;
+	padding-right: 12px;
+	width: 100%;
 }
 
 .tech_detail {
-  font-size: 18px;
-  max-width: 670px;
-  padding: 26px 0 32px 0;
-  width: 100%;
+	font-size: 18px;
+	max-width: 670px;
+	padding: 26px 0 32px 0;
+	width: 100%;
 }
 
 .tech_category::after,
 .tech_detail::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  bottom: -1px;
-  width: 100%;
-  height: 1px;
-  background-color: #D9D9D9;
+	background-color: #d9d9d9;
+	bottom: -1px;
+	content: "";
+	height: 1px;
+	left: 0;
+	position: absolute;
+	width: 100%;
 }
 
-/*--------------------
-service_2(APP Development System)
---------------------*/
 .service_2 {
-  margin-bottom: 150px;
+	margin-bottom: 150px;
 }
 
 .service_2 .section_title {
-  margin-bottom: 60px;
+	margin-bottom: 60px;
 }
 
 .service_2_layout {
-  justify-content: space-between;
+	justify-content: space-between;
 }
 
 .service_2_heading {
-  color: #0A50B1;
-  font-size: 28px;
+	color: #0a50b1;
+	font-size: 28px;
 }
 
 .service_2_text {
-  font-size: 18px;
-  margin-bottom: 60px;
+	font-size: 18px;
+	margin-bottom: 60px;
 }
 
 .service_2_text_bottom {
-  margin-bottom: 0;
+	margin-bottom: 0;
 }
 
 .service_2_image {
-  max-width: 382px;
-  -o-object-fit: contain;
-     object-fit: contain;
-  width: 100%;
+	max-width: 382px;
+	-o-object-fit: contain;
+	object-fit: contain;
+	width: 100%;
 }
 
-/*--------------------
-service_3(Development System)
---------------------*/
 .service_3 {
-  margin-bottom: 150px;
+	margin-bottom: 150px;
 }
 
 .service_3 .section_title {
-  margin-bottom: 60px;
+	margin-bottom: 60px;
 }
 
 .section_3_image {
-  max-width: 928px;
-  width: 100%;
+	max-width: 928px;
+	width: 100%;
 }
 
-/*--------------------
-service_4(Development Project Flow)
---------------------*/
 .service_4 {
-  margin-bottom: 150px;
+	margin-bottom: 150px;
 }
 
 .service_4 .section_title {
-  margin-bottom: 60px;
+	margin-bottom: 60px;
 }
 
 .service_4_image {
-  margin-bottom: 60px;
-  max-width: 940px;
-  width: 100%;
+	margin-bottom: 60px;
+	max-width: 940px;
+	width: 100%;
 }
 
 .service_4_heading {
-  color: #0A50B1;
-  font-size: 28px;
-  margin-bottom: 16px;
+	color: #0a50b1;
+	font-size: 28px;
+	margin-bottom: 16px;
 }
 
 .service_4_text {
-  font-size: 18px;
+	font-size: 18px;
 }
 
-/*--------------------
-service_5(Native APP Flow)
---------------------*/
 .service_5 {
-  margin-bottom: 234px;
+	margin-bottom: 234px;
 }
 
 .service_5 .section_title {
-  margin-bottom: 60px;
+	margin-bottom: 60px;
 }
 
 .service_5_heading {
-  color: #0A50B1;
-  font-size: 28px;
-  margin-bottom: 16px;
+	color: #0a50b1;
+	font-size: 28px;
+	margin-bottom: 16px;
 }
 
 .service_5_text {
-  font-size: 18px;
-  margin-bottom: 60px;
+	font-size: 18px;
+	margin-bottom: 60px;
 }
 
 .service_5_image {
-  max-width: 940px;
-  width: 100%;
-}/*# sourceMappingURL=service.css.map */
+	max-width: 940px;
+	width: 100%;
+}
+
