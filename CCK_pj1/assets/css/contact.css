@@ -1,121 +1,116 @@
-/*--------------------
-contact_top
---------------------*/
 .contact_main {
-  background-color: #F8F9FA;
-  padding-bottom: 192px;
+	background-color: #f8f9fa;
+	padding-bottom: 192px;
 }
 
 .contact_success_main {
-  min-height: calc(100vh - 233px);
+	min-height: calc(100vh - 233px);
 }
 
 .contact {
-  padding-top: 221px;
+	padding-top: 221px;
 }
 
 .contact_success {
-  margin-bottom: 100px;
-  padding-top: 221px;
+	margin-bottom: 100px;
+	padding-top: 221px;
 }
 
 .contact_title {
-  font-size: 36px;
-  margin-bottom: 60px;
-  text-align: center;
+	font-size: 36px;
+	margin-bottom: 60px;
+	text-align: center;
 }
 
 .contact_top_text {
-  margin-bottom: 60px;
-  text-align: center;
+	margin-bottom: 60px;
+	text-align: center;
 }
 
-/*--------------------
-contact_form
---------------------*/
 .contacct_form {
-  background-color: #FFFFFF;
-  box-shadow: 0 0 17px rgba(0, 0, 0, 0.06);
-  max-width: 1128px;
-  padding: 101px 106px 111px 106px;
-  width: 100%;
+	background-color: #fff;
+	box-shadow: 0 0 17px rgba(0,0,0,.06);
+	max-width: 1128px;
+	padding: 101px 106px 111px 106px;
+	width: 100%;
 }
 
 .contact_layout {
-  align-items: baseline;
-  justify-content: flex-end;
-  margin-bottom: 24px;
+	align-items: baseline;
+	justify-content: flex-end;
+	margin-bottom: 24px;
 }
 
 .contact_layout_last {
-  margin-bottom: 8px;
+	margin-bottom: 8px;
 }
 
 .contact_list {
-  color: #757575;
-  font-size: 20px;
+	color: #757575;
+	font-size: 20px;
 }
 
 .contact_label {
-  background-color: #005bac;
-  border-radius: 8px;
-  color: #FFFFFF;
-  font-size: 12px;
-  height: 22px;
-  line-height: 18px;
-  margin-left: 8px;
-  padding: 4px 10px;
+	background-color: #005bac;
+	border-radius: 8px;
+	color: #fff;
+	font-size: 12px;
+	height: 22px;
+	line-height: 18px;
+	margin-left: 8px;
+	padding: 4px 10px;
 }
 
 .optional {
-  background-color: #B4B4B4;
+	background-color: #b4b4b4;
 }
 
 .contact_input {
-  border: 1px solid #E5E3E1;
-  border-radius: 8px;
-  margin-left: 16px;
-  max-width: 605px;
-  padding: 16px 20px;
-  width: 100%;
+	border: 1px solid #e5e3e1;
+	border-radius: 8px;
+	margin-left: 16px;
+	max-width: 605px;
+	padding: 16px 20px;
+	width: 100%;
 }
 
 .contact_layout_last textarea {
-  line-height: 20px;
+	line-height: 20px;
 }
 
 .count_characters {
-  color: #757575;
-  font-size: 16px;
-  margin-bottom: 64px;
-  text-align: right;
+	color: #757575;
+	font-size: 16px;
+	margin-bottom: 64px;
+	text-align: right;
 }
 
 .count_characters.minus {
-  color: #ff063c;
+	color: #ff063c;
 }
 
 .submit_button {
-  background-color: #005bac;
-  border: 1px solid #005bac;
-  border-radius: 4px;
-  color: #FFFFFF;
-  display: block;
-  padding: 16px 14px;
-  max-width: 188px;
-  margin: 0 auto;
-  width: 100%;
+	background-color: #005bac;
+	border: 1px solid #005bac;
+	border-radius: 4px;
+	color: #fff;
+	display: block;
+	margin: 0 auto;
+	max-width: 188px;
+	padding: 16px 14px;
+	width: 100%;
 }
 
 .back_to_home {
-  background-color: #005bac;
-  border: 1px solid #005bac;
-  border-radius: 4px;
-  color: #FFFFFF;
-  display: block;
-  padding: 16px 0;
-  text-align: center;
-  max-width: 188px;
-  margin: 0 auto;
-  width: 100%;
-}/*# sourceMappingURL=contact.css.map */
+	background-color: #005bac;
+	border: 1px solid #005bac;
+	border-radius: 4px;
+	color: #fff;
+	display: block;
+	margin: 0 auto;
+	max-width: 188px;
+	padding: 16px 0;
+	text-align: center;
+	width: 100%;
+}
+
