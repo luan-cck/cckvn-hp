@@ -64,71 +64,12 @@ textarea {
   width: 100%;
 }
 
-.pc {
-  display: block;
-}
-
-.sp {
-  display: none;
-}
-
-.text_center {
-  text-align: center;
-}
-
-.text_left {
-  margin-left: 0;
-  text-align: left;
-}
-
-.text_right {
-  margin-right: 0;
-  text-align: right;
-}
-
 .flex {
   display: flex;
 }
 
-.flex_reverse {
-  display: flex;
-  flex-direction: row-reverse;
-}
-
-.flex_column {
-  flex-direction: column;
-}
-
-.flex_wrap {
-  flex-wrap: wrap;
-}
-
-.flex_align_start {
-  align-self: flex-start;
-}
-
-.flex_align_end {
-  align-self: flex-end;
-}
-
-.flex_align_center {
-  align-self: center;
-}
-
 .grid {
   display: grid;
-}
-
-.noto_B {
-  font-family: "Noto Sans JP Bold", sans-serif;
-}
-
-.noto_M {
-  font-family: "Noto Sans JP Medium", sans-serif;
-}
-
-.noto_R {
-  font-family: "Noto Sans JP Regular", sans-serif;
 }
 
 .azo_L {
@@ -454,14 +395,14 @@ footer
 }
 
 .footer_nav_list::after {
-  content: '';
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  width: 0;
-  height: 1px;
   background-color: $pure_white;
+  bottom: 0;
+  content: '';
+  height: 1px;
+  left: 0;
+  position: absolute;
   transition: width 0.2s ease-in-out;
+  width: 0;
 }
 
 .footer_nav_list:hover::after {

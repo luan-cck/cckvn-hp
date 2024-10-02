@@ -48,16 +48,16 @@ fv
 
 .fv_title {
   color: $blue;
+  display: inline-block;
   font-size: 100px;
   letter-spacing: -1px;
   line-height: 120px;
-  display: inline-block;
   white-space: pre-line;
 }
 
 .letter {
-  opacity: 0;
   display: inline-block;
+  opacity: 0;
   transition: opacity 0.1s ease;
 }
 
@@ -132,32 +132,32 @@ portfolio
   margin-top: 16px;
 }
 
- .portfolio_container {
+.portfolio_container {
   color: $pure_white;
   overflow: hidden;
   position: relative;
   width: 100%;
- }
+}
 
- .overlay {
+.overlay {
   background-color: rgba(0, 0, 0, 0);
+  height: 100%;
+  left: 0;
   position: absolute;
   top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
   transition: all 0.5s ease;
+  width: 100%;
   z-index: 5;
- }
+}
 
- .portfolio_container:hover .overlay {
+.portfolio_container:hover .overlay {
   background-color: rgba(0, 0, 0, 0.5);
- }
+}
 
- .portfolio_sub_container {
+.portfolio_sub_container {
   flex-direction: column;
   gap: 17px 0;
- }
+}
 
 .portfolio_container:hover .portfolio_text_container {
   transform: translateY(0);
@@ -212,10 +212,10 @@ portfolio
 }
 
 .portfolio_link .hover_img {
-  position: absolute;
-  top: 0;
   left: 0;
   opacity: 0;
+  position: absolute;
+  top: 0;
   transition: opacity 0.8s ease;
 }
 
@@ -278,14 +278,14 @@ mission
 --------------------*/
 .mission_bg {
   background-image: url("../img/mission_background.png");
-  background-size: contain;
   background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .mission_text {
   color: #23254C;
-  margin-left: 98px;
   margin-bottom: 80px;
+  margin-left: 98px;
   max-width: 840px;
   width: 100%;
 }
