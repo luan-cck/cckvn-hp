@@ -16,9 +16,15 @@
 	padding-bottom: 163px;
 }
 
+.work_contents_title {
+	color: #333;
+	font-size: 30px;
+	margin-bottom: 80px;
+}
+
 .work_contents_text,
 .work_contents_wrapper {
-	font-size: 20px;
+	font-size: 18px;
 	margin-left: 96px;
 }
 
@@ -27,7 +33,7 @@
 }
 
 .work_contents_wrapper {
-	margin-bottom: 61px;
+	margin-bottom: 62px;
 	max-width: 835px;
 	width: 100%;
 }

@@ -191,7 +191,7 @@ header
   padding-left: 24px;
   position: fixed;
   top: 0;
-  width: 100%;
+  width: 100vw;
   z-index: 10;
 }
 
@@ -330,7 +330,7 @@ header
 footer
 --------------------*/
 .footer {
-  background-color: $blue;
+  background-color: #0A50B1;
   padding: 36px 0;
 }
 
@@ -345,9 +345,17 @@ footer
   width: 100%;
 }
 
+.footer_left_contents {
+  align-items: center;
+  gap: 0 42px;
+  width: 100%;
+}
+
 .footer_right_contents {
   align-items: center;
   gap: 0 42px;
+  max-width: 281px;
+  width: 100%;
 }
 
 .company_section {
@@ -378,13 +386,6 @@ footer
   display: block;
   height: 66px;
   width: 1px;
-}
-
-.footer_left_contents {
-  align-items: center;
-  gap: 0 42px;
-  max-width: 280px;
-  width: 100%;
 }
 
 .footer_nav_list {

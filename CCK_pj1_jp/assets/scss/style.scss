@@ -22,7 +22,7 @@ fv
 
 .fv {
   overflow: hidden;
-  padding-bottom: 80px;
+  padding-bottom: 200px;
   position: relative;
 }
 
@@ -35,14 +35,14 @@ fv
   position: absolute;
   right: 0;
   top: 0;
-  transform: rotate(270deg) translate(15%, 45%) scale(1.2);
+  transform: rotate(270deg) translate(15%, 40%) scale(1.2);
   transition: all 0.5s ease;
   width: 100%;
   z-index: -5;
 }
 
 .fv_title_wrapper {
-  margin-bottom: 54px;
+  margin-bottom: 138px;
   padding-top: 226px;
 }
 
@@ -68,15 +68,15 @@ fv
 }
 
 .fv_heading {
-  font-size: 40px;
+  font-size: 36px;
   font-weight: bold;
   line-height: 48px;
   margin-bottom: 24px;
-}
+}s
 
 .fv_text {
   color: #23254C;
-  font-size: 20px;
+  font-size: 16px;
   margin-bottom: 20px;
 }
 
@@ -84,8 +84,9 @@ fv
 goal
 --------------------*/
 .goal {
-  background-color: $blue;
+  background-color: #0A50B1;
   color: $pure_white;
+  margin-bottom: 200px;
 }
 
 .goal_contents {
@@ -96,7 +97,7 @@ goal
 }
 
 .goal_text {
-  font-size: 20px;
+  font-size: 16px;
   margin-bottom: 57px;
 }
 
@@ -125,6 +126,9 @@ goal
 /*--------------------
 portfolio
 --------------------*/
+.portfolio {
+  margin-bottom: 200px;
+}
 
 .portfolio_layout {
   gap: 0 24px;
@@ -276,6 +280,10 @@ portfolio
 /*--------------------
 mission
 --------------------*/
+.mission {
+  margin-bottom: 200px;
+}
+
 .mission_bg {
   background-image: url("../img/mission_background.png");
   background-repeat: no-repeat;
@@ -365,7 +373,7 @@ team
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   gap: 33px;
-  margin-bottom: 129px;
+  margin-bottom: 112px;
 }
 
 .team_member_list {

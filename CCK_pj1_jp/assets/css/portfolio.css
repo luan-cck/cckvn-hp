@@ -39,6 +39,7 @@
 }
 
 .project_list {
+	background-color: #f8f9fa;
 	margin-bottom: 4px;
 	padding: 12px 12px 17px 12px;
 	transition: all .5s ease;
