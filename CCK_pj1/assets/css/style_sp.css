@@ -144,6 +144,12 @@
 	margin-left: 16px;
 }
 
+.mission_image_layout {
+	align-items: center;
+	flex-direction: column;
+	gap: 20px;
+}
+
 .team_member_container {
 	grid-template-columns: repeat(2, 1fr);
 }
