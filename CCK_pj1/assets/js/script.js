@@ -67,7 +67,7 @@ document.addEventListener('DOMContentLoaded', () => {
           entry.target.classList.add(className);
         }
       });
-    }, { threshold: 0.1 });
+    }, { threshold: 0 });
 
     document.querySelectorAll(selector).forEach(item => observer.observe(item));
   };

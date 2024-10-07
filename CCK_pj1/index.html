@@ -5,7 +5,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./assets/css/reset.min.css">
   <link rel="stylesheet" href="./assets/css/base.css">
+  <link rel="stylesheet" href="./assets/css/base_sp.css">
   <link rel="stylesheet" href="./assets/css/style.css">
+  <link rel="stylesheet" href="./assets/css/style_sp.css">
   <link rel="stylesheet" href="https://use.typekit.net/wly8fxz.css">
   <title>Document</title>
 </head>
@@ -19,7 +21,7 @@
             <img src="./assets/img/cck_logo.png" alt="logo">
           </a>
         </h1>
-        <form class="search_form">
+        <form class="search_form pc">
           <input type="text" placeholder="検索" class="search_input">
           <button type="submit" class="search_button">
             <img src="./assets/img/search.svg" alt="search_icon">
@@ -28,7 +30,7 @@
       </div>
       <div class="header_right_contents flex">
         <nav>
-          <ul class="header_nav_container flex azo_M">
+          <ul class="header_nav_container flex azo_M pc">
             <li class="header_nav_list">
               <a href="./index.html" class="header_nav_link flex">
                 <span class="link_text">Home</span>
@@ -76,7 +78,39 @@
           <button class="language_btn azo_R active">EN</button>
           <button class="language_btn azo_R">JP</button>
         </div>
+        <div class="hamburger sp" id="hamburger">
+          <span class="bar top"></span>
+          <span class="bar middle"></span>
+          <span class="bar bottom"></span>
+        </div>
       </div>
+    </div>
+
+    <div class="hamburger_display sp">
+      <nav>
+        <ul class="header_nav_container flex azo_M">
+          <li class="header_nav_list">
+            <a href="./index.html" class="header_nav_link flex">Home</a>
+          </li>
+          <li class="header_nav_list">
+            <a href="./service.html" class="header_nav_link flex">Service</a>
+          </li>
+          <li class="header_nav_list">
+            <a href="./portfolio.html" class="header_nav_link flex">Portfolio</a>
+          </li>
+          <li class="header_nav_list">
+            <a href="./contact.html" class="header_nav_link flex">Contact</a>
+          </li>
+          <li>
+            <form class="search_form">
+              <input type="text" placeholder="検索" class="search_input">
+              <button type="submit" class="search_button">
+                <img src="./assets/img/search.svg" alt="search_icon">
+              </button>
+            </form>
+          </li>
+        </ul>
+      </nav>
     </div>
   </header>
 
@@ -84,29 +118,34 @@
     <section class="fv">
       <div class="background_image"></div>
       <div class="w_1124 wrapper">
-        <div class="fv_title_wrapper">
+        <div class="fv_title_wrapper pc">
           <h2 class="fv_title azo_R animatedTitle">TECHNICALLY</h2>
           <h2 class="fv_title azo_R animatedTitle">IT'S NOT OUR PROBLEM</h2>
-      </div>
-      <div class="fv_container">
-        <h2 class="fv_heading azo_M scroll_left">Realizing sustainable connections through<br>
-        Technology solutions</h2>
-        <div class="fv_text_container scroll_right">
-          <p class="fv_text azo_L">
-            “Technically it's not our problem” is the philosophy that CCK Tean has cherished since its establishment in 2022.
-          </p>
-          <p class="fv_text azo_L">
-            From handpicked IT talent to cost-effective software development teams built in less than 2 years, we provide everything
-            you need to overcome any barrier to scalability.
-          </p>
-          <p class="fv_text azo_L">
-            A software company builds teams from what they have
-          </p>
-          <p class="fv_text azo_L">
-            CCK Team builds teams to best meet the job requirements
-          </p>
         </div>
-      </div>
+        <div class="fv_title_wrapper sp">
+          <h2 class="fv_title azo_R animatedTitle">TECHNICALLY</h2>
+          <h2 class="fv_title azo_R animatedTitle">IT'S NOT</h2>
+          <h2 class="fv_title azo_R animatedTitle">OUR PROBLEM</h2>
+        </div>
+        <div class="fv_container">
+          <h2 class="fv_heading azo_M scroll_left">Realizing sustainable connections through<br>
+          Technology solutions</h2>
+          <div class="fv_text_container scroll_right">
+            <p class="fv_text azo_L">
+              “Technically it's not our problem” is the philosophy that CCK Tean has cherished since its establishment in 2022.
+            </p>
+            <p class="fv_text azo_L">
+              From handpicked IT talent to cost-effective software development teams built in less than 2 years, we provide everything
+              you need to overcome any barrier to scalability.
+            </p>
+            <p class="fv_text azo_L">
+              A software company builds teams from what they have
+            </p>
+            <p class="fv_text azo_L">
+              CCK Team builds teams to best meet the job requirements
+            </p>
+          </div>
+        </div>
       </div>
     </section>
     <section class="goal">
@@ -188,8 +227,12 @@
 
     <section class="mission">
       <div class="w_1124 wrapper mission_bg">
-        <h3 class="section_subtitle azo_M animatedTitle">Our mission</h3>
-        <h2 class="section_title azo_R animatedTitle">MISSION AND VALUES</h2>
+        <div class="mission_title_container">
+          <h3 class="section_subtitle azo_M animatedTitle">Our mission</h3>
+          <h2 class="section_title azo_R animatedTitle pc">MISSION AND VALUES</h2>
+          <h2 class="section_title azo_R animatedTitle sp">MISSION AND</h2>
+          <h2 class="section_title azo_R animatedTitle sp">VALUES</h2>
+        </div>
         <p class="mission_text azo_R scroll_left">
           Our mission is to boost software outsourcing efficiency with smart strategy, fast team ramp-up and effective management
         </p>
@@ -367,5 +410,6 @@
     </footer>
 
   <script src="./assets/js/script.js"></script>
+  <script src="./assets/js/hamburger.js"></script>
 </body>
 </html>
