@@ -1,0 +1,46 @@
+@media screen and (max-width: 1024px) {
+
+.background_image {
+	background-size: cover;
+}
+
+.page_subtitle,
+.page_title,
+.service_top_heading {
+	margin-left: 40px;
+}
+
+}
+
+@media screen and (max-width: 500px) {
+
+.service_top {
+	padding-top: 140px;
+}
+
+.page_title {
+	font-size: 68px;
+}
+
+.service_top_contents {
+	flex-direction: column;
+}
+
+.service_top_link {
+	padding: 18px 36px 18px 12px;
+}
+
+.tech_category {
+	max-width: 168px;
+}
+
+.service_2_layout {
+	flex-direction: column;
+}
+
+.service_2_text_bottom {
+	margin-bottom: 60px;
+}
+
+}
+

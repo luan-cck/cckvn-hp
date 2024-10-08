@@ -298,6 +298,8 @@ textarea {
 }
 
 .footer_layout {
+	align-items: center;
+	gap: 42px;
 	justify-content: space-between;
 }
 
@@ -351,6 +353,10 @@ textarea {
 	display: block;
 	height: 66px;
 	width: 1px;
+}
+
+.footer_nav {
+	flex-direction: column;
 }
 
 .footer_nav_list {
